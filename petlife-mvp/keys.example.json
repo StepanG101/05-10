@@ -1,0 +1,8 @@
+{
+  "_комментарий": "Скопируйте этот файл в keys.json и вставьте свои ключи. Все поля необязательны: без ключей PetLife работает в демо-режиме (Open-Meteo + локальный ИИ-анализ).",
+  "openweather": "",
+  "openrouter": "",
+  "vision_model": "meta-llama/llama-3.2-11b-vision-instruct:free",
+  "text_model": "meta-llama/llama-3.3-70b-instruct:free",
+  "port": 8765
+}

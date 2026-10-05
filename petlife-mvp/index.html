@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PetLife — AI-экосистема для владельцев питомцев</title>
+<meta name="description" content="PetLife объединяет погоду и безопасные прогулки, здоровье, питание, дрессировку, сообщество и маркетплейс в одну экосистему для владельцев собак и кошек.">
+<meta name="theme-color" content="#2C5F8D">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!-- ============================ БЛОК 1. ШАПКА ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" data-scroll="#top">
+      <span class="logo-mark">🐾</span>
+      <span>PetLife</span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#features" data-scroll="#features">Возможности</a>
+      <a href="#how" data-scroll="#how">Как это работает</a>
+      <a href="#mission" data-scroll="#mission">Миссия</a>
+      <a href="#hub" data-scroll="#hub">Экосистема</a>
+      <a href="#try" data-scroll="#try">Попробовать</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-ghost btn-sm" data-act="hub.focus">Открыть кабинет</button>
+      <button class="btn btn-primary btn-sm" data-scroll="#form">Попробовать бесплатно</button>
+      <button class="btn btn-ghost btn-icon burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ БЛОК 2. HERO ============================ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Живое демо · работает без ключей API</span>
+      <h1>Заботься о питомце <span class="accent">с умом</span></h1>
+      <p class="hero-sub">PetLife — экосистема, которая объединяет погоду и безопасные прогулки, здоровье, питание, дрессировку, сообщество и маркетплейс в одном месте. Персональные рекомендации на основе данных о погоде, породе и возрасте питомца.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" data-scroll="#try">🐾 Попробовать бесплатно</button>
+        <button class="btn btn-ghost btn-lg" data-scroll="#features">Узнать больше</button>
+      </div>
+      <div class="hero-trust">
+        <div><b id="heroStatFeatures">42</b> функции в MVP</div>
+        <div><b id="heroStatPets">12 847</b> питомцев получили помощь</div>
+        <div><b>2</b> ИИ-демо в реальном времени</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pet-stage">
+        <div class="big-emoji">🐕</div>
+        <div class="big-emoji second">🐈</div>
+        <div class="float-chip chip-1">🔥 <span>Асфальт <b>+52 °C</b></span></div>
+        <div class="float-chip chip-2">🌬 <span>AQI <b>32 · хорошо</b></span></div>
+        <div class="float-chip chip-3">📷 <span>ИИ смотрит фото</span></div>
+        <div class="float-chip chip-4">💊 <span>Прививка через <b>27 дней</b></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 3. ВОЗМОЖНОСТИ ============================ -->
+<section id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">Возможности</span>
+      <h2>Что умеет PetLife</h2>
+      <p>Пять приложений в одном: погода для прогулок, здоровье, питание, дрессировка и сообщество — с единым профилем питомца.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="feature-card reveal" data-delay="1">
+        <div class="feature-ico">🌤</div>
+        <h3>Прогулка и погода</h3>
+        <p>Безопасное время для прогулки с учётом температуры асфальта, качества воздуха и породы питомца. Подскажем маршрут и лучший час.</p>
+        <div class="feature-tags">
+          <span class="badge badge-info">Асфальт</span>
+          <span class="badge badge-ok">AQI и UV</span>
+          <span class="badge badge-warn">Маршрут</span>
+        </div>
+        <button class="btn btn-soft" data-act="demo.scroll" data-target="try">Попробовать</button>
+      </article>
+      <article class="feature-card green reveal" data-delay="2">
+        <div class="feature-ico">🩺</div>
+        <h3>Здоровье и симптомы</h3>
+        <p>Загрузите фото — ИИ проанализирует и подскажет, что делать: наблюдать или идти к ветеринару. Дневник, вакцинация и отчёт врачу.</p>
+        <div class="feature-tags">
+          <span class="badge badge-info">Vision-ИИ</span>
+          <span class="badge badge-ok">Дневник</span>
+          <span class="badge badge-violet">Отчёт ветеринару</span>
+        </div>
+        <button class="btn btn-soft" data-act="demo.scroll" data-target="try">Попробовать</button>
+      </article>
+      <article class="feature-card orange reveal" data-delay="3">
+        <div class="feature-ico">❤️</div>
+        <h3>Социальная миссия</h3>
+        <p>5% от каждого Premium-платежа идёт в приюты. Виртуальное усыновление, волонтёрство и просвещение — просто пользуясь PetLife.</p>
+        <div class="feature-tags">
+          <span class="badge badge-ok">5% в приюты</span>
+          <span class="badge badge-warn">Усыновление</span>
+        </div>
+        <button class="btn btn-soft" data-scroll="#mission">Узнать больше</button>
+      </article>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:64px">
+      <span class="section-kicker">Глубина продукта</span>
+      <h2>42 функции — и все работают</h2>
+      <p>Нажмите на любую функцию — экосистема откроется на нужном экране.</p>
+    </div>
+    <div class="feature-marquee reveal" id="featureMarquee"></div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 4. КАК ЭТО РАБОТАЕТ ============================ -->
+<section id="how" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">Как это работает</span>
+      <h2>Три шага до персональной заботы</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal" data-delay="1">
+        <div class="step-num">1️⃣</div>
+        <h3>Добавьте питомца</h3>
+        <p>Укажите породу, возраст, вес, город и аллергии. Профиль создаётся за минуту — можно добавить несколько питомцев.</p>
+      </div>
+      <div class="step-arrow reveal" data-delay="1">➜</div>
+      <div class="step reveal" data-delay="2">
+        <div class="step-num">2️⃣</div>
+        <h3>Получите рекомендации</h3>
+        <p>Погода, прогулки, порции корма, напоминания — всё персонализировано под породу, возраст и состояние.</p>
+      </div>
+      <div class="step-arrow reveal" data-delay="2">➜</div>
+      <div class="step reveal" data-delay="3">
+        <div class="step-num">3️⃣</div>
+        <h3>Следите за здоровьем</h3>
+        <p>Загружайте фото, ведите дневник симптомов, смотрите трекеры и получайте отчёты для ветеринара.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 5. ИНТЕРАКТИВНОЕ ДЕМО ============================ -->
+<section id="try" class="demo-wrap">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">Попробуйте прямо сейчас</span>
+      <h2>Два ИИ-сценария в реальном времени</h2>
+      <p>Проверка безопасной прогулки с расчётом температуры асфальта и анализ фото питомца. Без регистрации.</p>
+    </div>
+
+    <div class="demo-grid">
+      <!-- ЛЕВАЯ КОЛОНКА: ПОГОДА -->
+      <div class="demo-panel reveal">
+        <div class="demo-panel-head">
+          <h3>🌤 Проверьте прогулку</h3>
+          <p>Асфальт, AQI, UV и лучшее время прогулки для вашей породы</p>
+        </div>
+        <div class="demo-panel-body">
+          <div class="form-grid">
+            <label class="field">
+              <span class="field-label">Ваш город</span>
+              <input class="input" id="cityInput" type="text" placeholder="Например, Москва" autocomplete="off">
+            </label>
+            <label class="field">
+              <span class="field-label">Порода питомца</span>
+              <select class="input" id="petTypeSelect">
+                <option value="small">Собака (мелкая)</option>
+                <option value="medium" selected>Собака (средняя)</option>
+                <option value="large">Собака (крупная)</option>
+                <option value="cat">Кошка</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn btn-primary btn-block" id="checkWeatherBtn" data-act="weather.check">🔍 Проверить погоду</button>
+          <div class="row mt-2" style="gap:6px" id="quickCities"></div>
+          <div id="weatherResult" class="mt-3"></div>
+        </div>
+        <div class="demo-panel-foot muted tiny">
+          Источник данных: Open-Meteo (без ключа). Можно переключить на OpenWeather — ключ вставляется в <code>js/config.js</code>.
+        </div>
+      </div>
+
+      <!-- ПРАВАЯ КОЛОНКА: ИИ-АНАЛИЗ ФОТО -->
+      <div class="demo-panel reveal" data-delay="1">
+        <div class="demo-panel-head">
+          <h3>🩺 Проверьте здоровье</h3>
+          <p>Загрузите фото питомца — ИИ посмотрит и подскажет, есть ли повод для беспокойства</p>
+        </div>
+        <div class="demo-panel-body">
+          <div class="drop-zone" id="photoDrop">
+            <span class="dz-ico">📷</span>
+            <b>Нажмите или перетащите фото</b>
+            <div class="muted small">JPG, PNG, WebP · до 5 МБ</div>
+            <input type="file" id="photoInput" accept="image/*" hidden>
+          </div>
+          <div class="row mt-2" style="gap:8px">
+            <button class="btn btn-ghost btn-sm" data-act="ai.sample" data-kind="skin">Демо: кожа</button>
+            <button class="btn btn-ghost btn-sm" data-act="ai.sample" data-kind="eyes">Демо: глаза</button>
+            <button class="btn btn-ghost btn-sm" data-act="ai.sample" data-kind="teeth">Демо: зубы</button>
+          </div>
+          <div id="photoPreviewWrap" class="mt-2 hidden"></div>
+          <button class="btn btn-green btn-block mt-2" id="analyzeBtn" disabled data-act="ai.analyze">🤖 Анализировать</button>
+          <div id="aiResult" class="mt-3"></div>
+        </div>
+        <div class="demo-panel-foot muted tiny">
+          С ключом OpenRouter анализирует vision-модель. Без ключа включается локальный анализатор изображения — демо работает всегда.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 6. МИССИЯ ============================ -->
+<section id="mission" class="mission">
+  <div class="container">
+    <div class="section-head left reveal" style="max-width:820px">
+      <span class="section-kicker" style="background:rgba(255,255,255,.15);color:#B9F6CA">Социальная миссия</span>
+      <h2>Мы не просто приложение</h2>
+      <p class="lead">PetLife — это социальная миссия. Часть дохода идёт в приюты для животных, каждый Premium-пользователь помогает найти дом для брошенных питомцев. Мы верим: забота о своём питомце может менять жизни тех, кому не повезло.</p>
+    </div>
+
+    <div class="counter-box reveal">
+      <div class="counter-value" id="missionCounter">0</div>
+      <div class="counter-label">🐾 питомцев получили помощь благодаря сообществу PetLife</div>
+      <div class="progress progress-green mt-3" style="height:12px;background:rgba(255,255,255,.2)">
+        <span id="missionProgress" style="width:0"></span>
+      </div>
+      <div class="muted small mt-1" style="color:rgba(255,255,255,.75)">Цель 2026 года — 20 000 питомцев. Выполнено <b id="missionPercent">0%</b>.</div>
+    </div>
+
+    <div class="mission-bars">
+      <div class="mission-item reveal" data-delay="1">
+        <div class="mi-ico">🏠</div>
+        <div class="mi-num">5%</div>
+        <h3>Поддержка приютов</h3>
+        <p>От каждого Premium-платежа — на корм, лечение и стерилизацию подопечных приютов-партнёров.</p>
+      </div>
+      <div class="mission-item reveal" data-delay="2">
+        <div class="mi-ico">🐕</div>
+        <div class="mi-num"><span id="missionAdoptions">0</span></div>
+        <h3>Виртуальное усыновление</h3>
+        <p>Возьмите шефство над питомцем из приюта: он получит уход, а вы — фотоотчёты и статус в профиле.</p>
+      </div>
+      <div class="mission-item reveal" data-delay="3">
+        <div class="mi-ico">📢</div>
+        <div class="mi-num"><span id="missionShelters">4</span></div>
+        <h3>Просвещение</h3>
+        <p>Учим ответственному владению: гиды по первой помощи, токсичным продуктам и уходу за породой.</p>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <button class="btn btn-green btn-lg" data-act="hub.open" data-panel="social" data-tab="adopt">❤️ Взять шефство над питомцем</button>
+      <button class="btn btn-ghost btn-lg" data-act="hub.open" data-panel="social">Смотреть сообщество</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ЭКОСИСТЕМА (APP HUB) ============================ -->
+<section id="hub" style="background:#F1F4F8">
+  <div class="container" style="max-width:1320px">
+    <div class="section-head reveal">
+      <span class="section-kicker">Живая экосистема</span>
+      <h2>PetLife Hub — рабочий кабинет владельца</h2>
+      <p>Все 42 функции внутри: погода, здоровье, питание, дрессировка, трекеры, карта района, форум, маркетплейс и ИИ-ассистент. Данные сохраняются в браузере.</p>
+    </div>
+    <div id="hubRoot" class="reveal"></div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 7. ФОРМА ============================ -->
+<section id="form" style="background:#fff;border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-kicker">Ранний доступ</span>
+      <h2>Получите ранний доступ</h2>
+      <p>Оставьте email — сообщим о запуске и дадим бесплатный Premium на месяц.</p>
+    </div>
+    <div class="form-card reveal" id="leadCard">
+      <form id="leadForm" novalidate>
+        <div class="form-grid">
+          <label class="field">
+            <span class="field-label">Имя *</span>
+            <input class="input" id="leadName" type="text" placeholder="Как вас зовут" autocomplete="name">
+            <span class="field-error hidden" id="leadNameError">Введите имя (минимум 2 символа)</span>
+          </label>
+          <label class="field">
+            <span class="field-label">Email *</span>
+            <input class="input" id="leadEmail" type="email" placeholder="you@example.com" autocomplete="email">
+            <span class="field-error hidden" id="leadEmailError">Введите корректный email</span>
+          </label>
+        </div>
+        <label class="field">
+          <span class="field-label">Порода питомца (необязательно)</span>
+          <input class="input" id="leadBreed" type="text" placeholder="Корги, мейн-кун, метис…">
+        </label>
+        <label class="check mb-2">
+          <input type="checkbox" id="leadPremium" checked>
+          <span>Хочу бесплатный Premium на месяц и помогать приютам (5% от платежа)</span>
+        </label>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" id="leadSubmit">🐾 Получить доступ</button>
+        <div class="muted tiny center mt-2">Никакого спама. Отписка в один клик. Заявки сохраняются локально на вашем компьютере.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ БЛОК 8. ФУТЕР ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-mark">🐾</span> PetLife</div>
+        <p class="small">AI-экосистема для владельцев питомцев: погода, здоровье, питание, дрессировка, сообщество и социальная миссия в одном месте.</p>
+        <div class="socials">
+          <a href="#top" title="Telegram" data-act="demo.toast" data-text="Telegram-канал PetLife — в разработке 🐾">✈️</a>
+          <a href="#top" title="VK" data-act="demo.toast" data-text="Сообщество VK PetLife — в разработке 🐾">🅥</a>
+          <a href="#top" title="YouTube" data-act="demo.toast" data-text="Канал с гайдами по уходу — в разработке 🎬">▶️</a>
+          <a href="#top" title="Почта" data-act="demo.toast" data-text="hello@petlife.app (демо-адрес)">✉️</a>
+        </div>
+      </div>
+      <div>
+        <h4>Продукт</h4>
+        <ul class="footer-list">
+          <li><a href="#features" data-scroll="#features">Возможности</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="walk">Погода для прогулок</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="health">Здоровье и ИИ-анализ</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="market">Маркетплейс</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="social" data-tab="forum">Форум владельцев</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Миссия</h4>
+        <ul class="footer-list">
+          <li><a href="#mission" data-scroll="#mission">Поддержка приютов</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="social" data-tab="adopt">Виртуальное усыновление</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="health" data-tab="firstaid">Первая помощь</a></li>
+          <li><a href="#hub" data-act="hub.open" data-panel="health" data-tab="toxic">Токсичные продукты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <ul class="footer-list">
+          <li><a href="#top" data-act="demo.privacy">Политика конфиденциальности</a></li>
+          <li><a href="#top" data-act="demo.contacts">Контакты</a></li>
+          <li><a href="#form" data-scroll="#form">Ранний доступ</a></li>
+          <li><a href="#top" data-act="demo.about">О проекте</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 PetLife. Все права защищены. Сделано как MVP студенческого стартапа · сборка <span id="buildVersion">2.0</span></div>
+      <div>🐾 5% дохода — в приюты для животных</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ СКРИПТЫ ============================ -->
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/store.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/form.js"></script>
+<script src="js/app/hub.js"></script>
+<script src="js/app/panel-overview.js"></script>
+<script src="js/app/panel-pets.js"></script>
+<script src="js/app/panel-walk.js"></script>
+<script src="js/app/panel-health.js"></script>
+<script src="js/app/panel-nutrition.js"></script>
+<script src="js/app/panel-training.js"></script>
+<script src="js/app/panel-trackers.js"></script>
+<script src="js/app/panel-services.js"></script>
+<script src="js/app/panel-social.js"></script>
+<script src="js/app/panel-market.js"></script>
+<script src="js/app/panel-ai.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
